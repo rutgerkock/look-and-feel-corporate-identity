@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script> 
+    <title>b-Rain</title>
+</head>
+<body>
+    <header id="header">
+        <button id="menuButton">
+            <img src="assets/menu.svg" alt="menu" id="menuIcon">
+        </button>
+        <div id="dropdownMenu">
+            <ul>
+                <li><a href="#">bRAIN</a></li>
+                <li><a href="#">Waarom?</a></li>
+                <li><a href="#">Waarom bRAIN?</a></li>
+                <li><a href="#">Brain-app</a></li>
+                <li><a href="#">Lezen</a></li>
+                <li><a href="#contact_section">Contact</a></li>
+                <li><a id="icons_linkedin" href="#" target="_blank"><img src="assets/linkedin.svg" alt="linkedin"></a></li>
+                <li><a id="icons_spatwater" href="#" target="_blank"><img src="assets/spatwater.svg" alt="spatwater"></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <a href="#main_section" id="up_button">
+            <img src="assets/down.svg" alt="up_button">
+        </a>
+        <section id="main_section">
+            <div class="titel">
+                <h1>bRAIN</h1>
+                <p>Welkom bij b-RAIN, de toekomst van ons water.</p>
+                <a href="#waarom_section" id="down">Scroll</a>
+            </div>
+            <div id="main_section_img"></div>
+        </section>
+        <section id="waarom_section">
+            <div class="titel">
+                <h1>Waarom</h1>
+                <p>Welkom bij b-RAIN, de toekomst van ons water.</p>
+                <p id="meer_lezen_hidden_waarom">
+                    Als de regenton vol zit en er is een hevige bui voorspeld, 
+                    dan leegt de ton zich automatisch om de piekbui op te vangen. 
+                    Als er droogte voorspeld is, houdt de regenton 
+                    zoveel mogelijk water vast. Dit water kan je op een 
+                    optimaal moment inzetten, zoals het beregenen van groen of 
+                    het wassen van je auto. De b-RAIN app communiceert met onze 
+                    slimme kraan en geeft je inzicht in hoeveel water
+                    er al bespaard is, wat de neerslagverwachting is en 
+                    wanneer je je tuin het beste water kan geven.
+                </p>
+                <button id="meer_lezen_waarom" class="meer_lezen">Meer Lezen</button>
+            </div>
+        </section>
+        <section id="waarom2_section">
+            <div class="titel">
+                <h1>Waarom bRain</h1>
+                <p>Welkom bij b-RAIN, de toekomst van ons water.</p>
+                <button class="meer_lezen">Meer Lezen</button>
+            </div>
+        </section>
+        <section id="app_section">
+            <div id="app_titel">
+                <h1>Brain-app</h1>
+                <p>Met behulp van de gratis Brain-app heeft u ieder moment van de dag inzicht in uw wateropslag.</p>
+                <button class="meer_lezen">Meer Lezen</button>
+            </div>
+        </section>
+        <section id="article_section">
+            <div class="titel">
+                <h1>Lezen</h1>
+                <p>Meer lezen over b-RAIN? Hier vind je gerelateerde artikelen.</p>
+            </div>
+            <div id="articles">
+                <div class="article">
+                    <p>Article 1 Title</p>
+                </div>
+                <div class="article">
+                    <p>Article 2 Title<p>
+                </div>
+                <div class="article">
+                    <p>Article 3 Title</p>
+                </div>
+                <div class="article">
+                    <p>Article 4 Title</p>
+                </div>
+                <div class="article">
+                    <p>Article 5 Title</p>
+                </div>
+                <div class="article">
+                    <p>Article 6 Title</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact_section">
+            <div id="meedoen_titel">
+                <h1>Meedoen</h1>
+                <p>Nieuwsgierig geworden? Stuur ons een mail!</p>
+            </div>
+            <form>
+                <label for="name">Naam</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Bericht</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Verstuur">
+            </form>
+        </section>
+        <footer>
+            <ul>
+                <li>1035 RN Amsterdam</li>
+                <li>Meteorenweg 280</li>
+                <li>© 2023 bRAIN All rights reserved.</li>
+            </ul>
+        </footer>
+    </main>
+</body> 
