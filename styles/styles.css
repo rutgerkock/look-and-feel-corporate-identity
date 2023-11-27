@@ -38,6 +38,7 @@ header {
 
 .header-expanded {
     background-color: #333;
+    z-index: 999;
 }
 
 header button {
@@ -372,7 +373,8 @@ footer ul {
 
 .title_position {
     position: fixed;
-    left: 2px;
-    top: 2px;
+    left: 0;
+    top: 0;
+    margin: 0.1rem;
     font-size: 2.4rem;
     transition: top 0.1s ease, font-size 0.3s ease;}
