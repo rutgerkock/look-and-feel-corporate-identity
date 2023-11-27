@@ -15,7 +15,7 @@ menuLinks.forEach(function (link) {
 
 function toggleMenu() {
     if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
-        dropdownMenu.style.height = '100vh';
+        dropdownMenu.style.height = '35rem';
         menuButton.classList.add('expanded');
         header.classList.add('header-expanded');
     } else {
