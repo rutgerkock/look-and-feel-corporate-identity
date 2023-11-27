@@ -33,7 +33,7 @@ header {
     width: 100%;
     background-color: var(--background-color);
     height: 5%;
-    z-index: 999;
+    z-index: 831;
 }
 
 .header-expanded {
@@ -147,6 +147,8 @@ h1 {
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
     color: var(--under-title-color);
+
+    z-index: 832;
 }
 
 .meer_lezen {
