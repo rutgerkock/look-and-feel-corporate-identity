@@ -64,8 +64,7 @@ window.addEventListener("load", hideUpButton);
 
 document.addEventListener('DOMContentLoaded', function () {
     var stickyTitle = document.getElementById('sticky_titel');
-    var scrollTrigger = document.getElementById('scrolltrigger').offsetTop; 
-
+    var scrollTrigger = document.getElementById('scrolltrigger').offsetTop - 70;
     function handleScroll() {
         if (window.scrollY >= scrollTrigger) {
             stickyTitle.classList.add('title_position');
