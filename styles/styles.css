@@ -32,7 +32,7 @@ header {
     align-items: center; 
     width: 100%;
     background-color: var(--background-color);
-    height: 5%;
+    height: 7%;
     z-index: 831;
 }
 
@@ -376,5 +376,6 @@ footer ul {
     left: 0;
     top: 0;
     margin: 0.1rem;
-    font-size: 2.4rem;
-    transition: top 0.1s ease, font-size 0.3s ease;}
+    font-size: 2.8rem;
+    transition: top 0.1s ease, font-size 0.3s ease;
+}
