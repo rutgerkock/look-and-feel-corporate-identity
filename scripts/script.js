@@ -60,3 +60,18 @@ window.addEventListener("scroll", function() {
 
 window.addEventListener("load", hideUpButton);
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var stickyTitle = document.getElementById('sticky_titel');
+    var scrollTrigger = document.getElementById('scrolltrigger').offsetTop; 
+
+    function handleScroll() {
+        if (window.scrollY >= scrollTrigger) {
+            stickyTitle.classList.add('title_position');
+        } else {
+            stickyTitle.classList.remove('title_position');
+        }
+    }
+    window.addEventListener('scroll', handleScroll);
+});
