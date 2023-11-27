@@ -327,7 +327,7 @@ h1 {
 #contact_section form input, textarea {
     border: none;
     border-bottom: 2px solid #4F686F;
-    border-radius: none;
+    border-radius: 0px;
     background-color: transparent;
 }
 
