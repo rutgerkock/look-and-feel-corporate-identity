@@ -144,6 +144,8 @@ header button {
     transform: scale(0.75);
 }
 
+
+
 h1 {
     font-family: var(--title-font);
     font-size: var(--title-font-size);
@@ -200,6 +202,7 @@ h1 {
 #main_section {
     height: 100vh;
     align-items: center;
+    padding-top: 9rem;
 }
 
 #main_section_img {
@@ -228,7 +231,7 @@ h1 {
 }
 
 #app_titel {
-    padding: 30% 18% 0% 8%;
+    padding: 4rem 18% 0% 8%;
     min-width: 72%;
 }
 
@@ -237,7 +240,7 @@ h1 {
 }
 
 .titel {
-    padding: 30% 18% 0% 8%;
+    padding: 4rem 18% 0% 8%;
     min-width: 72%;
 }
 
@@ -314,7 +317,8 @@ h1 {
 #contact_section form {
     display: flex;
     flex-direction: column;
-    margin: 15% 8% 0% 8%;
+    margin: 3rem 8% 0% 8%;
+    max-width: 40rem;
 }
 
 #contact_section form label, #contact_section form input[type=submit] {
@@ -359,9 +363,8 @@ footer {
     font-size: 1.2rem;
     font-weight: var(--title-font-weight);
     color: var(--under-title-color);
-    height: 10rem;
     position: relative;
-    margin: 15% 8% 0% 8%;
+    margin: 3rem 8% 3rem 8%;
     border-top: 2px solid #4F686F;
 }
 
@@ -372,6 +375,24 @@ footer ul {
     flex-direction: column;
     gap: 0.8rem;
 }
+
+footer a {
+    text-decoration: none;
+    color: #3E4F66;
+}
+
+footer a::after {
+    content: "";
+    display: inline-block;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+    background-color: currentColor;
+    aspect-ratio: 1/.86;
+    transition: 0.3s ease;
+    height: 0.6rem;
+    top: 0;
+    margin-left: .5rem;
+}
+
 
 .title_position {
     position: fixed;
