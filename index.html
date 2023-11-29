@@ -14,14 +14,11 @@
         </button>
         <div id="dropdownMenu">
             <ul>
-                <li><a href="#main_section">bRAIN</a></li>
                 <li><a href="#waarom_section">Waarom?</a></li>
                 <li><a href="#waarom2_section">Waarom bRAIN?</a></li>
                 <li><a href="#app_section">Brain-app</a></li>
                 <li><a href="#article_section">Lezen</a></li>
                 <li><a href="#contact_section">Contact</a></li>
-                <li><a id="icons_linkedin" href="#" target="_blank"><img src="assets/linkedin.svg" alt="linkedin"></a></li>
-                <li><a id="icons_spatwater" href="#" target="_blank"><img src="assets/spatwater.svg" alt="spatwater"></a></li>
             </ul>
         </div>
     </header>
@@ -31,7 +28,7 @@
         </a>
         <section id="main_section">
             <div class="titel">
-                <h1 id="sticky_titel">bRAIN</h1>
+                <a href="#main_section"><h1 id="sticky_titel">bRAIN</h1></a>
                 <p id="scrolltrigger">Welkom bij b-RAIN, de toekomst van ons water.</p>
                 <a href="#waarom_section" id="down">Scroll</a>
             </div>
@@ -133,11 +130,11 @@
             </div>
             <form>
                 <label for="name">Naam</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="message">Bericht</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" required></textarea>
                 <input type="submit" value="Verstuur">
             </form>
         </section>

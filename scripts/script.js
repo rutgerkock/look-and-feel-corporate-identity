@@ -1,6 +1,7 @@
 const menuButton = document.getElementById('menuButton');
 const dropdownMenu = document.getElementById('dropdownMenu');
 const header = document.getElementById('header');
+var stickyTitle = document.getElementById('sticky_titel');
 
 menuButton.addEventListener('click', function () {
     toggleMenu();
@@ -15,13 +16,15 @@ menuLinks.forEach(function (link) {
 
 function toggleMenu() {
     if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
-        dropdownMenu.style.height = '35rem';
+        dropdownMenu.style.height = '18.5rem';
         menuButton.classList.add('expanded');
         header.classList.add('header-expanded');
+
     } else {
         dropdownMenu.style.height = '0';
         menuButton.classList.remove('expanded');
         header.classList.remove('header-expanded');
+
     }
 }
 

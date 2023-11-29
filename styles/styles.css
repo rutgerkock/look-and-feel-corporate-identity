@@ -38,8 +38,7 @@ header {
 }
 
 .header-expanded {
-    background-color: #333;
-    z-index: 999;
+    z-index: 998;
 }
 
 header button {
@@ -54,9 +53,9 @@ header button {
 #dropdownMenu {
     display: block;
     position: fixed;
-    top: 0;
+    top: 3.5rem;
     width: 100%;
-    background-color: #333;
+    background-color: #fff;
     color: #E2F1FF;
     text-align: left;
     height: 0;
@@ -70,15 +69,15 @@ header button {
     padding: 5px;
 }
 
-#dropdownMenu ul li:hover {
-    background-color: #4F686F;
+a {
+    text-decoration: none;
 }
 
 #dropdownMenu a {
     font-family: var(--title-font);
     font-size: 2rem;
     font-weight: var(--title-font-weight);
-    color: #E2F1FF;
+    color: var(--under-title-color);
     text-decoration: none;
     padding: 10px;
     display: flex;
@@ -151,7 +150,7 @@ h1 {
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
     color: var(--under-title-color);
-    z-index: 832;
+    z-index: 999;
 }
 
 .meer_lezen {
