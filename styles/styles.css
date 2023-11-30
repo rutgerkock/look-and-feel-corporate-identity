@@ -100,24 +100,6 @@ a {
     margin-right: 1rem;
 }
 
-#icons_linkedin {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scale(0.7);
-}
-
-#icons_spatwater {
-    position: absolute;
-    bottom: 0;
-    left: 5rem;
-    transform: scale(0.7);
-}
-
-#icons_linkedin img:hover, #icons_spatwater img:hover {
-    transform: scale(1.1);
-    transition: 0.3s ease;
-}
 
 #menuIcon {
     transition: rotate 0.3s ease;
@@ -243,13 +225,14 @@ h1 {
     min-width: 72%;
 }
 
-.titel p, #meedoen_titel p, #app_titel p{
+p {
     font-family: var(--second-font);
     font-size: var(--second-font-size);
     font-weight: var(--title-font-weight);
     color: var(--second-title-color);
     width: 107%;
 }
+
 .articles {
     margin-left: 8%;
     display: flex;
@@ -393,7 +376,6 @@ footer a::after {
     margin-left: .5rem;
 }
 
-
 .title_position {
     position: fixed;
     left: 0;
@@ -401,4 +383,90 @@ footer a::after {
     margin: 0.1rem;
     font-size: 2.8rem;
     transition: top 0.1s ease, font-size 0.3s ease;
+}
+
+#phone_container {
+    position: relative;
+    width: 390px;
+    height: 691px;
+}
+
+#phone_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#phone_container button:nth-of-type(1) {
+    position: absolute;
+    top: 21%;
+    right: 20%;
+    background-image: url('../assets/button.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 800;
+    min-width: 2rem;
+    min-height: 2rem;
+}
+
+#phone_container p:nth-of-type(1) {
+    display: none;
+    position: absolute;
+    top: 23%;
+    right: 24%;
+    max-width: 11rem;
+    background-color: var(--background-color);
+    border: 4px solid var(--second-title-color);
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+#phone_container button:nth-of-type(1):hover + p:nth-of-type(1) {
+    display: block;
+    box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.4);
+}
+
+#phone_container p:nth-of-type(1):hover {
+    display: block;
+    box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.4);
+}
+
+#phone_container button:nth-of-type(2) {
+    position: absolute;
+    bottom: 21%;
+    right: 52%;
+    background-image: url('../assets/button.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 800;
+    min-width: 2rem;
+    min-height: 2rem;
+}
+
+#phone_container p:nth-of-type(2) {
+    display: none;
+    position: absolute;
+    top: 77%;
+    right: 11%;
+    max-width: 11rem;
+    background-color: var(--background-color);
+    border: 4px solid var(--second-title-color);
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+#phone_container button:nth-of-type(2):hover + p:nth-of-type(2) {
+    display: block;
+    box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.4);
+}
+
+#phone_container p:nth-of-type(2):hover {
+    display: block;
+    box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.4);
 }
