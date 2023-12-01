@@ -387,20 +387,26 @@ footer a::after {
 
 #phone_container {
     position: relative;
-    width: 390px;
-    height: 691px;
+    width: 25rem;
+    height: 43rem;
 }
 
 #phone_container img {
     width: 100%;
     height: 100%;
+    max-width: 25rem;
     object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    position: absolute;
 }
 
-#phone_container button:nth-of-type(1) {
+#phone_container img:nth-of-type(1) {
+    opacity: 1;
+}
+
+#phone_container button {
     position: absolute;
-    top: 21%;
-    right: 20%;
     background-image: url('../assets/button.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -409,64 +415,51 @@ footer a::after {
     cursor: pointer;
     z-index: 800;
     min-width: 2rem;
-    min-height: 2rem;
-}
+    min-height: 2rem;}
 
-#phone_container p:nth-of-type(1) {
-    display: none;
-    position: absolute;
-    top: 23%;
-    right: 24%;
-    max-width: 11rem;
-    background-color: var(--background-color);
-    border: 4px solid var(--second-title-color);
-    border-radius: 10px;
-    padding: .5rem;
-}
-
-#phone_container button:nth-of-type(1):hover + p:nth-of-type(1) {
-    display: block;
-    box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.4);
-}
-
-#phone_container p:nth-of-type(1):hover {
-    display: block;
-    box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.4);
+#phone_container button:nth-of-type(1) {
+    top: 21%;
+    right: 20%;
 }
 
 #phone_container button:nth-of-type(2) {
-    position: absolute;
-    bottom: 21%;
-    right: 52%;
-    background-image: url('../assets/button.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 800;
-    min-width: 2rem;
-    min-height: 2rem;
+    bottom: 19%;
+    right: 36%;
 }
 
-#phone_container p:nth-of-type(2) {
-    display: none;
+#phone_container button:nth-of-type(3) {
+    top: 73.4%;
+    right: 43%;
+    min-width: 3.4rem;
+    min-height: 2rem;
+    background-color: #81C979;
+    border: none;
+    border-radius: .5rem;
+    font-size: .75rem;
+    font-weight: 600;
+    font-family: var(--second-font);
+    color: white;
+    background-image: none;
+}
+
+#phone_container p{
     position: absolute;
-    top: 77%;
-    right: 11%;
     max-width: 11rem;
     background-color: var(--background-color);
     border: 4px solid var(--second-title-color);
     border-radius: 10px;
     padding: .5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-#phone_container button:nth-of-type(2):hover + p:nth-of-type(2) {
-    display: block;
-    box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.4);
+#phone_container p:nth-of-type(1) {
+    top: 23%;
+    right: 24%;
 }
 
-#phone_container p:nth-of-type(2):hover {
-    display: block;
-    box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.4);
+#phone_container p:nth-of-type(2) {
+    top: 79%;
+    right: 39%;
 }
+
