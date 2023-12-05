@@ -15,18 +15,17 @@ menuLinks.forEach(function (link) {
 });
 
 function toggleMenu() {
-    if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
-        dropdownMenu.style.height = '18.5rem';
+    if (!dropdownMenu.classList.contains('dropdownMenu-expanded')) {
+        dropdownMenu.classList.add('dropdownMenu-expanded');
         menuButton.classList.add('expanded');
         header.classList.add('header-expanded');
-
     } else {
-        dropdownMenu.style.height = '0';
+        dropdownMenu.classList.remove('dropdownMenu-expanded');
         menuButton.classList.remove('expanded');
         header.classList.remove('header-expanded');
-
     }
 }
+
 
 const meerLezenHiddenWaarom = document.getElementById('meer_lezen_hidden_waarom');
 const meerLezenWaarom = document.getElementById('meer_lezen_waarom');
